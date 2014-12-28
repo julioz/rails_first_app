@@ -1,7 +1,9 @@
 FirstApp::Application.routes.draw do
+  resources :microposts
+
   devise_for :users
 
-  root :to => "home#index"
+  root :to => "microposts#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
